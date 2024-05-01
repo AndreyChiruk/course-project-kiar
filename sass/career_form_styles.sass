@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
+body
+    max-width: 100%
+    width: 100%
+    background: rgb(255, 229, 180)
+a
+    text-decoration: none
+    color: black
+input[type="submit"]
+    cursor: pointer
+button
+    cursor: pointer
+li
+    cursor: pointer
+.container
+    width: 100%
+    header
+        display: flex
+        justify-content: space-between
+
+        div.logo
+            cursor: pointer
+            padding-left: 62px
+            display: flex
+            align-items: center
+            svg
+                transition: 0.3s
+            svg:hover
+                g path[fill="#CE0002"]
+                    transition: 0.3s
+                    fill: #3f31b8
+                
+            
+            
+        nav
+            ul
+                list-style-type: none
+                display: flex
+                align-items: center
+                a.active
+                    color: rgb(65, 105, 225)
+                li
+                    transition: 0.4s
+                    font-family: "Abel", sans-serif
+                    font-weight: 400
+                    font-style: normal
+                    margin-right: 36px
+                    height: max-content
+                    &:hover
+                        transition: 0.4s
+                        color: rgb(65, 105, 225)
+                div.language
+                    cursor: pointer
+                    margin-left: calc(95px  -  36px)
+                    svg
+                        transition: 0.3s
+                    svg:hover path[fill="rgb(65, 105, 225)"]
+                        transition: 0.3s
+                        fill: rgb(25, 63, 175)
+                    svg:hover path[fill="black"]
+                        transition: 0.3s
+                        fill: #FFFFFF
+    main
+        article.article-text
+            margin-top: 95px
+            max-width: 900px
+            margin-left: 190px
+            button
+                background: rgb(65, 105, 225)
+                padding: 26px 38px
+            h3
+                max-width: 603px
+                margin-top: 60px
+                margin-bottom: 48px
+                color: rgb(0, 0, 0)
+                font-family: Roboto
+                font-size: 72px
+                font-weight: 800
+                line-height: 84px
+                letter-spacing: 0%
+                text-align: left
+                text-transform: uppercase
+            p, ul, li 
+                color: rgb(0, 0, 0)
+                font-family: "Abel", sans-serif
+                font-size: 24px
+                font-weight: 400
+                line-height: 31px
+                letter-spacing: 0%
+                text-align: left
+            p.article-title
+                margin-top: 40px
+            li
+                margin-left: 22px
+            button
+        article.article-form
+            margin-top: 41px
+            padding-bottom: 206px
+            background: rgb(65, 105, 225)
+            div.article-form-obolochka
+                margin: 0 auto
+                max-width: 1360px
+                width: 100%
+                h2
+                    padding-top: 65px
+                    max-width: 553px
+                    color: rgb(0, 0, 0)
+                    font-family: Roboto
+                    font-size: 72px
+                    font-weight: 800
+                    line-height: 84px
+                    letter-spacing: 0%
+                    text-align: left
+                    text-transform: uppercase
+                form
+                    margin-top: 45px
+                    div.second-line
+                        margin-top: 50px
+                    div.third-line
+                        margin-top: 50px
+                        display: flex
+                        justify-content: flex-start
+                        div
+                            input.text-boxcheckbox
+                                margin-left: 50px
+                                width: 56px
+                                height: 56px
+                            p.text-checkbox
+                                margin-left: 20px
+                                max-width: 491px
+                                color: rgb(0, 0, 0)
+                                font-family: "Abel", sans-serif
+                                font-size: 24px
+                                font-weight: 400
+                                line-height: 31px
+                                letter-spacing: 0%
+                                text-align: left
+                    div
+                        display: flex
+                        justify-content: space-between
+                        align-items: center
+                        input
+                            color: rgb(255, 229, 180)
+                            max-width: 410px
+                            width: 100%
+                            height: 46px
+                            border: none
+                            border-bottom: 2px solid rgb(255, 229, 180)
+                            background-color: transparent
+                            font-family: "Abel", sans-serif
+                            font-size: 24px
+                            font-weight: 400
+                            line-height: 31px
+                            letter-spacing: 0%
+                            text-align: left
+                        input[type="submit"]
+                            height: 94px
+                            width: max-content
+                            padding: 26px 40px
+                            background: rgb(255, 229, 180)
+                            color: black
+    footer
+        padding: 18px 0
+        display: flex
+        justify-content: center
+        align-items: center
+        background: rgb(239, 239, 239)
+        div.footer_logo
+            position: absolute
+            left: 27px
+            p
+                transition: 0.4s
+                cursor: pointer
+                color: rgb(126, 126, 126)
+                font-family: "Abel", sans-serif
+                font-size: 16px
+                font-weight: 400
+                line-height: 20px
+                letter-spacing: 0%
+                text-align: left
+                &:hover
+                    transition: 0.4s
+                    color: rgb(71, 71, 71)
+        nav
+            align-self: center
+            ul
+                width: 674px
+                list-style-type: none
+                display: flex
+                justify-content: space-between
+                li
+                    transition: 0.4s
+                    margin-right: 36px
+                    color: rgb(126, 126, 126)
+                    font-family: "Abel", sans-serif
+                    font-size: 16px
+                    font-weight: 400
+                    line-height: 20px
+                    letter-spacing: 0%
+                    text-align: center
+                    &:last-child
+                        margin-right: 0
+                    &:hover
+                        transition: 0.4s
+                        color: rgb(71, 71, 71)

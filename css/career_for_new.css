@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  max-width: 100%;
+  width: 100%;
+  background: rgb(255, 229, 180);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  cursor: pointer;
+}
+
+li {
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+}
+.container header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.container header div.logo {
+  cursor: pointer;
+  padding-left: 62px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container header div.logo svg {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.container header div.logo svg:hover g path[fill="#CE0002"] {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  fill: #3f31b8;
+}
+.container header nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container header nav ul a.active {
+  color: rgb(65, 105, 225);
+}
+.container header nav ul li {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  font-family: "Abel", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-right: 36px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+.container header nav ul li:hover {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: rgb(65, 105, 225);
+}
+.container header nav ul div.language {
+  cursor: pointer;
+  margin-left: 59px;
+}
+.container header nav ul div.language svg {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.container header nav ul div.language svg:hover path[fill="rgb(65, 105, 225)"] {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  fill: rgb(25, 63, 175);
+}
+.container header nav ul div.language svg:hover path[fill=black] {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  fill: #FFFFFF;
+}
+.container main {
+  max-width: 1595px;
+  margin: 0 auto;
+}
+.container main article.main-title {
+  margin-top: 110px;
+}
+.container main article.main-title h2 {
+  color: rgb(0, 0, 0);
+  font-family: Roboto;
+  font-size: 72px;
+  font-weight: 800;
+  line-height: 84px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+.container main article.main-jobs {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.container main article.main-jobs section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  max-width: 505px;
+  max-height: 505px;
+  width: 505px;
+  height: 505px;
+  background: rgb(65, 105, 225);
+}
+.container main article.main-jobs section div.div-jobs {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.container main article.main-jobs section div.div-jobs p {
+  max-width: 234px;
+  margin-left: 40px;
+  color: rgb(255, 255, 255);
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 38px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.container main article.main-jobs section div.div-jobs a {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+.container main article.main-jobs section div.div-jobs a button {
+  background: rgb(65, 105, 225);
+  padding: 15px 30px;
+}
+.container main article.main-icons {
+  margin-top: 133px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container main article.main-icons section.section-text h2 {
+  max-width: 603px;
+  color: rgb(0, 0, 0);
+  font-family: Roboto;
+  font-size: 72px;
+  font-weight: 800;
+  line-height: 84px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+.container main article.main-icons section.section-text p {
+  margin-top: 17px;
+  max-width: 603px;
+  color: rgb(0, 0, 0);
+  font-family: Abel;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.container main article.main-icons section.section-icons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 270px 118px 270px;
+  grid-template-columns: repeat(2, 270px);
+  -ms-grid-rows: -webkit-max-content 37px -webkit-max-content;
+  -ms-grid-rows: max-content 37px max-content;
+  grid-template-rows: repeat(2, -webkit-max-content);
+  grid-template-rows: repeat(2, max-content);
+  row-gap: 37px;
+  -webkit-column-gap: 118px;
+     -moz-column-gap: 118px;
+          column-gap: 118px;
+}
+.container main article.main-icons section.section-icons > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.container main article.main-icons section.section-icons > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.container main article.main-icons section.section-icons > *:nth-child(3) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+.container main article.main-icons section.section-icons > *:nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+.container main article.main-icons section.section-icons p.article_icons-title {
+  color: rgb(0, 0, 0);
+  font-family: Roboto;
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 52px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.container main article.main-icons section.section-icons p.article_icons-subtitle {
+  font-family: "Abel", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.container main article.main-icons ul {
+  list-style-type: none;
+}
+.container main article.main-icons ul li {
+  color: rgb(0, 0, 0);
+  font-family: "Abel", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0%;
+  text-align: right;
+  text-transform: uppercase;
+}
+.container main article.main-icons ul li a {
+  color: rgb(0, 0, 0);
+}
+.container main article.main-icons ul li a p {
+  margin-right: 10px;
+}
+.container main article.main-icons ul li.section_menu-first {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container main article.main-icons ul li.section_menu-second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container footer {
+  margin-top: 178px;
+  padding: 18px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgb(239, 239, 239);
+}
+.container footer div.footer_logo {
+  position: absolute;
+  left: 27px;
+}
+.container footer div.footer_logo p {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  cursor: pointer;
+  color: rgb(126, 126, 126);
+  font-family: "Abel", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.container footer div.footer_logo p:hover {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: rgb(71, 71, 71);
+}
+.container footer nav {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+.container footer nav ul {
+  width: 674px;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.container footer nav ul li {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin-right: 36px;
+  color: rgb(126, 126, 126);
+  font-family: "Abel", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.container footer nav ul li:last-child {
+  margin-right: 0;
+}
+.container footer nav ul li:hover {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: rgb(71, 71, 71);
+}

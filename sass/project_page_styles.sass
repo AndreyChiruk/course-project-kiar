@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
+body
+    max-width: 100%
+    width: 100%
+    background: rgb(65, 105, 225)
+a
+    text-decoration: none
+    color: black
+button
+    cursor: pointer
+li
+    cursor: pointer
+.container
+    width: 100%
+    header
+        display: flex
+        justify-content: space-between
+
+        div.logo
+            cursor: pointer
+            padding-left: 62px
+            display: flex
+            align-items: center
+            svg
+                transition: 0.3s
+            svg:hover
+                g path[fill="#CE0002"]
+                    transition: 0.3s
+                    fill: #3f31b8
+                
+            
+            
+        nav
+            ul
+                list-style-type: none
+                display: flex
+                align-items: center
+                a.active
+                    color: rgb(255, 229, 180)
+                li
+                    transition: 0.4s
+                    font-family: "Abel", sans-serif
+                    font-weight: 400
+                    font-style: normal
+                    margin-right: 36px
+                    height: max-content
+                    &:hover
+                        transition: 0.4s
+                        color: rgb(255, 229, 180)
+                div.language
+                    cursor: pointer
+                    margin-left: calc(95px  -  36px)
+                    svg
+                        transition: 0.3s
+                    svg:hover path[fill="#FFE5B4"]
+                        transition: 0.3s
+                        fill: #ffc861
+    main.main_first
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 65px
+        article
+            margin-left: 123px  
+            h2.article_title
+                max-width: 606px
+                color: rgb(0, 0, 0)
+                font-family: Roboto
+                font-size: 72px
+                font-weight: 800
+                line-height: 84px
+                letter-spacing: 0%
+                text-align: left
+                text-transform: uppercase
+            p.article_subtitle1
+                margin-top: 11px
+                max-width: 606px
+                color: rgb(0, 0, 0)
+                font-family: "Abel", sans-serif
+                font-size: 24px
+                font-weight: 400
+                line-height: 31px
+                letter-spacing: 0%
+                text-align: left
+            p.article_subtitle2
+                margin-top: 22px
+                max-width: 606px
+                color: rgb(0, 0, 0)
+                font-family: "Abel", sans-serif
+                font-size: 24px
+                font-weight: 400
+                line-height: 31px
+                letter-spacing: 0%
+                text-align: left
+            button
+                margin-top: 28px
+                background: rgb(255, 229, 180)
+                padding: 26px
+        article.article_menu
+            margin-right: 47px
+            ul
+                list-style-type: none
+                li
+                    color: rgb(255, 229, 180)
+                    font-family: "Abel", sans-serif
+                    font-size: 20px
+                    font-weight: 400
+                    line-height: 25px
+                    letter-spacing: 0%
+                    text-align: right
+                    text-transform: uppercase
+                    p
+                        margin-right: 10px
+                li.article_menu-first
+                    margin-top: 10px
+                    display: flex
+                    justify-content: flex-end
+                    align-items: center
+                li.article_menu-second
+                    
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    a
+                        color: rgb(255, 229, 180)
+    main.main_second
+        width: 100%
+        background: rgb(255, 229, 180)
+        article.main_second-title
+            margin: 0 auto
+            max-width: 1548px
+            h2.main_second-title
+                padding-top: 93px
+                color: rgb(0, 0, 0)
+                font-family: Roboto
+                font-size: 72px
+                font-weight: 800
+                line-height: 84px
+                letter-spacing: 0%
+                text-align: left
+                text-transform: uppercase
+        article.article_projects
+            margin: 0 auto
+            max-width: 1548px
+            margin-top: 30px
+            padding-bottom: 62px
+            display: flex
+            justify-content: space-between
+            section
+                display: flex
+                flex-direction: column 
+                h3
+                    margin-top: 23px
+                    color: rgb(0, 0, 0)
+                    font-family: Roboto
+                    font-size: 44px
+                    font-weight: 800
+                    line-height: 52px
+                    letter-spacing: 0%
+                    text-align: left
+                    text-transform: uppercase
+                p
+                    margin-top: 23px
+                    margin-bottom: 40px
+                    max-width: 420px
+                    color: rgb(0, 0, 0)
+                    font-family: "Abel", sans-serif
+                    font-size: 24px
+                    font-weight: 400
+                    line-height: 31px
+                    letter-spacing: 0%
+                    text-align: left
+                a
+                    margin-top: auto
+                    button
+                        align-self: flex-start
+                        margin-top: auto
+                        padding: 20px 35px
+                        background: rgb(65, 105, 225)
+
+        
+    footer
+        padding: 18px 0
+        display: flex
+        justify-content: center
+        align-items: center
+        background: rgb(239, 239, 239)
+        div.footer_logo
+            position: absolute
+            left: 27px
+            p
+                transition: 0.4s
+                cursor: pointer
+                color: rgb(126, 126, 126)
+                font-family: "Abel", sans-serif
+                font-size: 16px
+                font-weight: 400
+                line-height: 20px
+                letter-spacing: 0%
+                text-align: left
+                &:hover
+                    transition: 0.4s
+                    color: rgb(71, 71, 71)
+        nav
+            align-self: center
+            ul
+                width: 674px
+                list-style-type: none
+                display: flex
+                justify-content: space-between
+                li
+                    transition: 0.4s
+                    margin-right: 36px
+                    color: rgb(126, 126, 126)
+                    font-family: "Abel", sans-serif
+                    font-size: 16px
+                    font-weight: 400
+                    line-height: 20px
+                    letter-spacing: 0%
+                    text-align: center
+                    &:last-child
+                        margin-right: 0
+                    &:hover
+                        transition: 0.4s
+                        color: rgb(71, 71, 71)

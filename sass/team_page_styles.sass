@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
+body
+    max-width: 100%
+    width: 100%
+    background: url(../img/fon.png) rgb(255, 229, 180) 2.5cm bottom no-repeat
+    background-position: right top
+a
+    text-decoration: none
+    color: black
+li
+    cursor: pointer
+.container
+    width: 100%
+    header
+        display: flex
+        justify-content: space-between
+
+        div.logo
+            cursor: pointer
+            padding-left: 62px
+            display: flex
+            align-items: center
+            svg
+                transition: 0.3s
+            svg:hover
+                g path[fill="#CE0002"]
+                    transition: 0.3s
+                    fill: #3f31b8
+                
+            
+            
+        nav
+            ul
+                list-style-type: none
+                display: flex
+                align-items: center
+                a.active
+                    color: rgb(255, 229, 180)
+                li
+                    transition: 0.4s
+                    font-family: "Abel", sans-serif
+                    font-weight: 400
+                    font-style: normal
+                    margin-right: 36px
+                    height: max-content
+                    &:hover
+                        transition: 0.4s
+                        color: rgb(255, 229, 180)
+                div.language
+                    cursor: pointer
+                    margin-left: calc(95px  -  36px)
+                    svg
+                        transition: 0.3s
+                    svg:hover path[fill="#FFE5B4"]
+                        transition: 0.3s
+                        fill: #ffc861
+    main
+        width: 100%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        div.main_container
+            margin-top: 90px
+            width: max-content
+            article
+                width: max-content
+                h1
+                    max-width: 403px
+                    color: rgb(0, 0, 0)
+                    font-family: Roboto
+                    font-size: 72px
+                    font-weight: 800
+                    line-height: 84px
+                    letter-spacing: 0%
+                    text-align: left
+                    text-transform: uppercase
+            div.developers_container
+                display: flex
+                article
+                    margin-top: 10px
+                    display: flex
+                    section
+                        margin-right: 70px
+                        &:last-child
+                            margin-right: 0
+                        h2.section_fio
+                            margin-top: 16px
+                            color: rgb(0, 0, 0)
+                            font-family: Roboto
+                            font-size: 32px
+                            font-weight: 800
+                            line-height: 38px
+                            letter-spacing: 0%
+                            text-align: left
+                        p.section_spec, p.section_text
+                            color: rgb(0, 0, 0)
+                            font-family: "Abel", sans-serif
+                            font-size: 20px
+                            font-weight: 400
+                            line-height: 25px
+                            letter-spacing: 0%
+                            text-align: left
+                        p.section_text
+                            margin-top: 22px
+                            max-width: 342px
+                article.article_menu
+            margin-right: 47px
+            ul
+                display: flex
+                flex-direction: column
+                
+                justify-content: center
+                list-style-type: none
+                padding-bottom: 190px
+                li
+                    color: rgb(255, 229, 180)
+                    font-family: "Abel", sans-serif
+                    font-size: 20px
+                    font-weight: 400
+                    line-height: 25px
+                    letter-spacing: 0%
+                    text-align: right
+                    text-transform: uppercase
+                    a
+                        color: rgb(255, 229, 180)
+                        p
+                            margin-right: 10px
+                li.article_menu-first
+                    margin-top: 10px
+                    display: flex
+                    justify-content: flex-end
+                    align-items: center
+                li.article_menu-second
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+    footer
+        margin-top: 130px
+        padding: 18px 0
+        display: flex
+        justify-content: center
+        align-items: center
+        background: rgb(239, 239, 239)
+        div.footer_logo
+            position: absolute
+            left: 27px
+            p
+                transition: 0.4s
+                cursor: pointer
+                color: rgb(126, 126, 126)
+                font-family: "Abel", sans-serif
+                font-size: 16px
+                font-weight: 400
+                line-height: 20px
+                letter-spacing: 0%
+                text-align: left
+                &:hover
+                    transition: 0.4s
+                    color: rgb(71, 71, 71)
+        nav
+            align-self: center
+            ul
+                width: 674px
+                list-style-type: none
+                display: flex
+                justify-content: space-between
+                li
+                    transition: 0.4s
+                    margin-right: 36px
+                    color: rgb(126, 126, 126)
+                    font-family: "Abel", sans-serif
+                    font-size: 16px
+                    font-weight: 400
+                    line-height: 20px
+                    letter-spacing: 0%
+                    text-align: center
+                    &:last-child
+                        margin-right: 0
+                    &:hover
+                        transition: 0.4s
+                        color: rgb(71, 71, 71)
