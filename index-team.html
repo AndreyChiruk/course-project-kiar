@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/f.png" type="image/png">
     <link rel="stylesheet" href="css/general_styles.css">
     <link rel="stylesheet" href="css/team_page_styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Toy.Stream</title>
 </head>
 <body>
     <div class="container">
         <header>
-            <div class="logo">
+            <div class="logo" data-aos="fade-down" data-aos-delay="100">
                 <a href="index.html">
                   <svg width="135" height="75" viewBox="0 0 135 75" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_2_2392)">
@@ -76,7 +78,7 @@
                       </defs>
                   </svg></a>
               </div>
-            <nav>
+            <nav data-aos="fade-down" data-aos-delay="300">
                 <ul>
                     <a href="index.html"><li>Главная</li></a>
                     <a class="active" href="index-company.html"><li>Компания</li></a>
@@ -99,11 +101,11 @@
         <main>
             <div class="main_container">
                 <article>
-                    <h1>Наша команда</h1>
+                    <h1 data-aos="fade-right" data-aos-delay="500">Наша команда</h1>
                 </article>
                 <div class="developers_container">
                     <article class="main_developers">
-                        <section>
+                        <section data-aos="fade-down" data-aos-delay="600">
                             <svg width="219.000000" height="219.000000" viewBox="0 0 219 219" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <desc>
                                         Created with Pixso.
@@ -120,7 +122,7 @@
                             <p class="section_spec">CEO</p>
                             <p class="section_text">Цитата: «Безос говорил, если не можешь накормить команду двумя пиццами - у тебя слишком большая команда. Нам удается! И в этом наше преимущество. (-:»</p>
                         </section>
-                        <section>
+                        <section data-aos="fade-down" data-aos-delay="700">
                             <svg width="219.000000" height="219.000000" viewBox="0 0 219 219" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <desc>
                                         Created with Pixso.
@@ -138,7 +140,7 @@
                             <p class="section_spec">(CBDO)</p>
                             <p class="section_text">Цитата: «Мы ежедневно отслеживаем и нализируем топы Apple Store и Goole Play Market - в нашем деле важно быть в курсе каждой детали ситуации на рынке»</p>
                         </section>
-                        <section>
+                        <section data-aos="fade-down" data-aos-delay="800">
                             <svg width="219.000000" height="219.000000" viewBox="0 0 219 219" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <desc>
                                         Created with Pixso.
@@ -156,7 +158,7 @@
                             <p class="section_spec">Game designer</p>
                             <p class="section_text">Цитата: «Мозговые штурмы порой затягиваются до поздней ночи, но как еще найти среди сотни идей - ту самую, блестящую?»</p>
                         </section>
-                        <section>
+                        <section data-aos="fade-down" data-aos-delay="900">
                             <svg width="219.000000" height="219.000000" viewBox="0 0 219 219" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <desc>
                                         Created with Pixso.
@@ -175,7 +177,7 @@
                             <p class="section_text">Цитата: «В каждом проекте важно не только то, что видно игроку - но и что находится под капотом. Мгновенный отклик и вовремя сохраненная игра - очень ценятся игроками»</p>
                         </section>
                     </article>
-                    <article class="article_menu">
+                    <article class="article_menu" data-aos="fade-down" data-aos-delay="1100">
                         <ul>
                             <li class="article_menu-second">
                                 <a href="index-company.html"><p>О СТУДИИ</p></a>
@@ -219,6 +221,10 @@
             </nav>
         </footer>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="scripts/script.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

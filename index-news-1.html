@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/f.png" type="image/png">
     <link rel="stylesheet" href="css/general_styles.css">
     <link rel="stylesheet" href="css/news_novosti_styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Toy.Stream</title>
 </head>
 <body>
     <div class="container">
         <header>
-            <div class="logo">
+            <div class="logo" data-aos="fade-down" data-aos-delay="100">
                 <a href="index.html">
                   <svg width="135" height="75" viewBox="0 0 135 75" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_2_2392)">
@@ -76,7 +78,7 @@
                       </defs>
                   </svg></a>
               </div>
-            <nav>
+            <nav data-aos="fade-down" data-aos-delay="300">
                 <ul>
                     <a href="index.html"><li>Главная</li></a>
                     <a href="index-company.html"><li>Компания</li></a>
@@ -98,13 +100,13 @@
         </header>
         <main>
             <article class="article_title">
-                <h2>НОВОСТИ</h2>
+                <h2 data-aos="fade-right" data-aos-delay="500">НОВОСТИ</h2>
             </article>
             <article class="article_news">
                 <section class="container_news">
-                    <img class="main-photo" src="img/news32.png" alt="">
+                    <img data-aos="fade-right" data-aos-delay="700" class="main-photo" src="img/news32.png" alt="">
                     <section class="top-news">
-                        <p class="time-news"> 
+                        <p class="time-news" data-aos="fade-left" data-aos-delay="900"> 
                             <span class="time-icon">
                                 <svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                     <desc>
@@ -124,14 +126,14 @@
                             </span>
                             3 апреля 2024 г
                         </p>
-                        <h3 class="news-title">Советы: как оптимизировать 3D-игры</h3>
-                        <p class="list-title">Управление ресурсами:</p>
-                        <ul class="list">
+                        <h3 class="news-title" data-aos="fade-left" data-aos-delay="1000">Советы: как оптимизировать 3D-игры</h3>
+                        <p class="list-title" data-aos="fade-left" data-aos-delay="1100">Управление ресурсами:</p>
+                        <ul class="list" data-aos="fade-left" data-aos-delay="1200">
                             <li>Оптимизируйте использование текстур, моделей и звуков. Используйте уровни детализации (LOD) и уменьшайте разрешение текстур там, где это возможно.</li>
                             <li>Избегайте загрузки большого количества ресурсов сразу, загружая их по мере необходимости.</li>
                         </ul>
-                        <p class="list-title">Освещение и тени:</p>
-                        <ul class="list">
+                        <p class="list-title" data-aos="fade-left" data-aos-delay="1300">Освещение и тени:</p>
+                        <ul class="list" data-aos="fade-left" data-aos-delay="1400">
                             <li>
                                 Используйте упрощенные источники света, такие как фоновые освещения, чтобы уменьшить количество теней.
                             </li>
@@ -142,42 +144,42 @@
                     </section>
                 </section>
                 <section class="container_news_text">
-                    <p>Геометрия и модели:</p>
-                    <ul>
+                    <p data-aos="fade-right" data-aos-delay="1500">Геометрия и модели:</p>
+                    <ul data-aos="fade-right" data-aos-delay="1600">
                         <li>Используйте LOD для моделей, чтобы отображать более простые версии объектов на дальнем расстоянии.</li>
                         <li>Уменьшите количество полигонов, особенно в областях, где они не видны.</li>
                     </ul>
-                    <p>Управление кадрами и анимацией:</p>
-                    <ul>
+                    <p data-aos="fade-right" data-aos-delay="1700">Управление кадрами и анимацией:</p>
+                    <ul data-aos="fade-right" data-aos-delay="1800">
                         <li>Обеспечьте поддержку частоты кадров, соответствующей возможностям устройства, на котором запускается игра.</li>
                         <li>Оптимизируйте анимации, используя только необходимые ключевые кадры и сглаживание движения.</li>
                     </ul>
-                    <p>Спрайты и частицы:</p>
-                    <ul>
+                    <p data-aos="fade-right" data-aos-delay="100">Спрайты и частицы:</p>
+                    <ul data-aos="fade-right" data-aos-delay="200">
                         <li>Используйте спрайты для мелких объектов, таких как листья или мелкие предметы, чтобы уменьшить сложность рендеринга.</li>
                         <li>Ограничьте количество частиц и используйте простые эффекты.</li>
                     </ul>
-                    <p>Сетевые операции:</p>
-                    <ul>
+                    <p data-aos="fade-right" data-aos-delay="300">Сетевые операции:</p>
+                    <ul data-aos="fade-right" data-aos-delay="400">
                         <li>Минимизируйте количество сетевых запросов и используйте кэширование, если это возможно.</li>
                         <li>Снизьте нагрузку на сеть, обрабатывая данные по мере необходимости.</li>
                     </ul>
-                    <p>Оптимизация рендеринга:</p>
-                    <ul>
+                    <p data-aos="fade-right" data-aos-delay="500">Оптимизация рендеринга:</p>
+                    <ul data-aos="fade-right" data-aos-delay="600">
                         <li>Используйте оптимизированные шейдеры для рендеринга.</li>
                         <li>Применяйте culling (отсечение) объектов, которые не видны игроку.</li>
                     </ul>
-                    <p>Управление памятью:</p>
-                    <ul>
+                    <p data-aos="fade-right" data-aos-delay="700">Управление памятью:</p>
+                    <ul data-aos="fade-right" data-aos-delay="800">
                         <li>Следите за выделением и освобождением памяти, чтобы избежать утечек.</li>
                         <li>Используйте профилирование для выявления и устранения проблем с производительностью.</li>
                     </ul>
-                    <p>Используйте инструменты профилирования:</p>
-                    <ul>
+                    <p data-aos="fade-right" data-aos-delay="900">Используйте инструменты профилирования:</p>
+                    <ul data-aos="fade-right" data-aos-delay="1000">
                         <li>Применяйте инструменты профилирования для анализа производительности и выявления узких мест.</li>
                     </ul>
-                    <p>Тестируйте на разных устройствах:</p>
-                    <ul>
+                    <p data-aos="fade-right" data-aos-delay="1100">Тестируйте на разных устройствах:</p>
+                    <ul data-aos="fade-right" data-aos-delay="1200">
                         <li>Проводите тестирование на различных устройствах, чтобы убедиться, что игра работает плавно на всех платформах.</li>
                     </ul>
                 </section>
@@ -199,6 +201,10 @@
             </nav>
         </footer>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="scripts/script.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

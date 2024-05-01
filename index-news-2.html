@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/f.png" type="image/png">
     <link rel="stylesheet" href="css/general_styles.css">
     <link rel="stylesheet" href="css/news_novosti_styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Toy.Stream</title>
 </head>
 <body>
     <div class="container">
         <header>
-            <div class="logo">
+            <div class="logo" data-aos="fade-down" data-aos-delay="100">
                 <a href="index.html">
                   <svg width="135" height="75" viewBox="0 0 135 75" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_2_2392)">
@@ -76,7 +78,7 @@
                       </defs>
                   </svg></a>
               </div>
-            <nav>
+            <nav data-aos="fade-down" data-aos-delay="300">
                 <ul>
                     <a href="index.html"><li>Главная</li></a>
                     <a href="index-company.html"><li>Компания</li></a>
@@ -98,13 +100,13 @@
         </header>
         <main>
             <article class="article_title">
-                <h2>НОВОСТИ</h2>
+                <h2 data-aos="fade-right" data-aos-delay="500">НОВОСТИ</h2>
             </article>
             <article class="article_news">
                 <section class="container_news">
-                    <img style="object-fit: cover;" class="main-photo" src="img/new2.png" alt="">
+                    <img data-aos="fade-right" data-aos-delay="700" style="object-fit: cover;" class="main-photo" src="img/new2.png" alt="">
                     <section class="top-news">
-                        <p class="time-news"> 
+                        <p class="time-news" data-aos="fade-left" data-aos-delay="900"> 
                             <span class="time-icon">
                                 <svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                     <desc>
@@ -124,61 +126,61 @@
                             </span>
                             2 апреля 2024 г
                         </p>
-                        <h3 class="news-title">Советы по оптимизации 2D-игр</h3>
-                        <p class="list-title">Управление ресурсами:</p>
-                        <ul class="list">
+                        <h3 class="news-title" data-aos="fade-left" data-aos-delay="1000">Советы по оптимизации 2D-игр</h3>
+                        <p class="list-title" data-aos="fade-left" data-aos-delay="1100">Управление ресурсами:</p>
+                        <ul class="list" data-aos="fade-left" data-aos-delay="1200">
                             <li>Сократите объем и количество текстур, используйте оптимизированные форматы изображений и кэширование, чтобы снизить нагрузку на систему.</li>
                             <li>Применяйте динамическую загрузку ресурсов, загружая объекты только тогда, когда они действительно необходимы.</li>
                         </ul>
-                        <p class="list-title">Эффективное использование графики:</p>
-                        <ul class="list">
+                        <p class="list-title" data-aos="fade-left" data-aos-delay="1300">Эффективное использование графики:</p>
+                        <ul class="list" data-aos="fade-left" data-aos-delay="1400">
                             <li>Оптимизируйте отрисовку объектов, применяя спрайт-листы и анимацию через кадры, чтобы уменьшить количество отдельных изображений.</li>
                             <li>Избегайте сложных анимаций и визуальных эффектов, сосредотачиваясь на простых и эффективных подходах.</li>
                         </ul>
-                        <p class="list-title">Сетевые оптимизации:</p>
-                        <ul class="list">
+                        <p class="list-title" data-aos="fade-left" data-aos-delay="1500">Сетевые оптимизации:</p>
+                        <ul class="list" data-aos="fade-left" data-aos-delay="1600">
                             <li>Минимизируйте передачу данных, сокращая количество сообщений между сервером и клиентом.</li>
                             <li>Используйте эффективные протоколы передачи данных и сжатие для уменьшения объема передаваемой информации.</li>
                         </ul>
                     </section>
                 </section>
                 <section class="container_news_text">
-                    <p class="list-title">Геометрия и модели:</p>
-                    <ul class="list">
+                    <p class="list-title" data-aos="fade-left" data-aos-delay="100">Геометрия и модели:</p>
+                    <ul class="list" data-aos="fade-left" data-aos-delay="200">
                         <li>Используйте оптимизированные спрайты для уменьшения количества ресурсов, необходимых для отображения объектов.</li>
                         <li>Обратите внимание на уровни детализации (LOD) для спрайтов, чтобы уменьшить нагрузку на систему в зависимости от расстояния до объектов.</li>
                     </ul>
-                    <p class="list-title">Управление кадрами и анимацией:</p>
-                    <ul class="list">
+                    <p class="list-title" data-aos="fade-left" data-aos-delay="300">Управление кадрами и анимацией:</p>
+                    <ul class="list" data-aos="fade-left" data-aos-delay="400">
                         <li>Поддерживайте стабильную частоту кадров для плавного игрового процесса и синхронизируйте анимации с этой частотой.</li>
                         <li>Оптимизируйте анимации, используя циклические спрайты и переходы между состояниями для плавного перехода.</li>
                     </ul>
-                    <p class="list-title">Спрайты и визуальные эффекты:</p>
-                    <ul class="list">
+                    <p class="list-title" data-aos="fade-left" data-aos-delay="500">Спрайты и визуальные эффекты:</p>
+                    <ul class="list" data-aos="fade-left" data-aos-delay="600">
                         <li>Используйте композитинг спрайтов, чтобы уменьшить количество объектов, которые нужно рендерить одновременно.</li>
                         <li>Ограничьте использование частиц и визуальных эффектов, фокусируясь на оптимизированных и минималистичных подходах.</li>
                     </ul>
-                    <p class="list-title">Оптимизация сетевых операций:</p>
-                    <ul class="list">
+                    <p class="list-title" data-aos="fade-left" data-aos-delay="700">Оптимизация сетевых операций:</p>
+                    <ul class="list" data-aos="fade-left" data-aos-delay="800">
                         <li>Оптимизируйте сетевые запросы, обрабатывая только необходимые данные и используя сжатие при передаче данных.</li>
                         <li>Используйте кэширование и буферизацию для снижения нагрузки на сеть и повышения скорости загрузки ресурсов.</li>
                     </ul>
-                    <p class="list-title">Оптимизация рендеринга:</p>
-                    <ul class="list">
+                    <p class="list-title" data-aos="fade-left" data-aos-delay="900">Оптимизация рендеринга:</p>
+                    <ul class="list" data-aos="fade-left" data-aos-delay="1000">
                         <li>Выбирайте оптимизированные шейдеры для улучшения качества графики без ущерба для производительности.</li>
                         <li>Используйте техники отсечения (culling) для игнорирования объектов, которые не видны в поле зрения игрока.</li>
                     </ul>
-                    <p class="list-title">Управление памятью:</p>
-                    <ul class="list">
+                    <p class="list-title" data-aos="fade-left" data-aos-delay="1100">Управление памятью:</p>
+                    <ul class="list" data-aos="fade-left" data-aos-delay="1200">
                         <li>Следите за эффективным выделением и освобождением памяти, избегая утечек и устаревших ссылок.</li>
                         <li>Используйте инструменты профилирования, чтобы выявить и устранить проблемные места с производительностью.</li>
                     </ul>
-                    <p class="list-title">Инструменты профилирования:</p>
-                    <ul class="list">
+                    <p class="list-title" data-aos="fade-left" data-aos-delay="1300">Инструменты профилирования:</p>
+                    <ul class="list" data-aos="fade-left" data-aos-delay="1400">
                         <li>Используйте инструменты профилирования для анализа и оптимизации производительности игры.</li>
                     </ul>
-                    <p class="list-title">Тестирование на разных устройствах:</p>
-                    <ul class="list">
+                    <p class="list-title" data-aos="fade-left" data-aos-delay="1500">Тестирование на разных устройствах:</p>
+                    <ul class="list" data-aos="fade-left" data-aos-delay="1600">
                         <li>Тестируйте игру на различных устройствах и платформах, чтобы убедиться, что она работает плавно во всех условиях.</li>
                     </ul>   
                 </section>
@@ -200,6 +202,10 @@
             </nav>
         </footer>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="scripts/script.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

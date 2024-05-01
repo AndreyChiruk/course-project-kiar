@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/f.png" type="image/png">
     <link rel="stylesheet" href="css/general_styles.css">
     <link rel="stylesheet" href="css/home_page_styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Toy.Stream</title>
 </head>
 <body>
     <div class="container">
         <header>
-            <div class="logo">
+            <div class="logo" data-aos="fade-down" data-aos-delay="100">
               <a href="index.html">
                 <svg width="135" height="75" viewBox="0 0 135 75" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_2_2392)">
@@ -76,7 +78,7 @@
                     </defs>
                 </svg></a>
             </div>
-            <nav>
+            <nav data-aos="fade-down" data-aos-delay="300">
                 <ul>
                     <a class="active" href="index.html"><li>Главная</li></a>
                     <a href="index-company.html"><li>Компания</li></a>
@@ -99,10 +101,10 @@
         <main>
 
           <article class="block_text">
-            <h1>Мы создаем мобильные игры, в которые ты играешь</h1>
-            <p>Toy.Stream - это компания-разработчик и издатель мобильных игр.
+            <h1 data-aos="fade-right" data-aos-delay="500">Мы создаем мобильные игры, в которые ты играешь</h1>
+            <p data-aos="fade-right" data-aos-delay="700">Toy.Stream - это компания-разработчик и издатель мобильных игр.
               Мы работаем небольшими командами - это позволяет оставаться гибкими и быстро подстраиваться под потребности наших игроков. На каждом этапе - начиная с детальногоразбора идеи, заканчивая реализацией игровых механик и геймплея - мы ориентируемсяна наших пользователей. Просто потому, что сами играем*</p>
-            <section class="block_text-link">
+            <section class="block_text-link" data-aos="fade-right" data-aos-delay="900">
               <a href="index-company.html"><button>
                 <svg width="91.000000" height="47.000000" viewBox="0 0 91 47" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <desc>
@@ -142,8 +144,8 @@
                 интерфейса - наши основные принципы.»</p>
             </section>
           </article>
-          <article class="main_image">
-            <svg width="805.000000" height="565.000000" viewBox="0 0 805 565" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <article class="main_image" >
+            <svg data-aos="fade-down" data-aos-delay="700" width="805.000000" height="565.000000" viewBox="0 0 805 565" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <desc>
                   Created with Pixso.
               </desc>
@@ -174,6 +176,10 @@
           </nav>
         </footer>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="scripts/script.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
