@@ -3,6 +3,7 @@ body {
   max-width: 100%;
   width: 100%;
   background: rgb(65, 105, 225);
+  overflow-x: hidden;
 }
 
 a {
@@ -90,21 +91,67 @@ li {
   fill: #ffc861;
 }
 .container main.main_first {
+  margin-top: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-bottom: 65px;
+}
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes slide {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+.container main.main_first .slider-wrapper {
+  width: calc(100% - 170vw);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: slide 50s linear infinite alternate;
+          animation: slide 50s linear infinite alternate;
+}
+.container main.main_first div.slider-wrapper {
+  margin-right: 47px;
+}
+.container main.main_first div.slider-wrapper div.slider-element {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 65px;
 }
-.container main.main_first article {
+.container main.main_first div.slider-wrapper div.slider-element article {
   margin-left: 123px;
 }
-.container main.main_first article h2.article_title {
+.container main.main_first div.slider-wrapper div.slider-element article h2.article_title {
   max-width: 606px;
   color: rgb(0, 0, 0);
   font-family: Roboto;
@@ -115,7 +162,7 @@ li {
   text-align: left;
   text-transform: uppercase;
 }
-.container main.main_first article p.article_subtitle1 {
+.container main.main_first div.slider-wrapper div.slider-element article p.article_subtitle1 {
   margin-top: 11px;
   max-width: 606px;
   color: rgb(0, 0, 0);
@@ -126,7 +173,7 @@ li {
   letter-spacing: 0%;
   text-align: left;
 }
-.container main.main_first article p.article_subtitle2 {
+.container main.main_first div.slider-wrapper div.slider-element article p.article_subtitle2 {
   margin-top: 22px;
   max-width: 606px;
   color: rgb(0, 0, 0);
@@ -137,18 +184,15 @@ li {
   letter-spacing: 0%;
   text-align: left;
 }
-.container main.main_first article button {
+.container main.main_first div.slider-wrapper div.slider-element article button {
   margin-top: 28px;
   background: rgb(255, 229, 180);
   padding: 26px;
 }
-.container main.main_first article.article_menu {
-  margin-right: 47px;
-}
-.container main.main_first article.article_menu ul {
+.container main.main_first div.slider-wrapper ul {
   list-style-type: none;
 }
-.container main.main_first article.article_menu ul li {
+.container main.main_first div.slider-wrapper ul li {
   color: rgb(255, 229, 180);
   font-family: "Abel", sans-serif;
   font-size: 20px;
@@ -158,10 +202,10 @@ li {
   text-align: right;
   text-transform: uppercase;
 }
-.container main.main_first article.article_menu ul li p {
+.container main.main_first div.slider-wrapper ul li p {
   margin-right: 10px;
 }
-.container main.main_first article.article_menu ul li.article_menu-first {
+.container main.main_first div.slider-wrapper ul li.article_menu-first {
   margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -173,7 +217,7 @@ li {
       -ms-flex-align: center;
           align-items: center;
 }
-.container main.main_first article.article_menu ul li.article_menu-second {
+.container main.main_first div.slider-wrapper ul li.article_menu-second {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -184,7 +228,7 @@ li {
       -ms-flex-align: center;
           align-items: center;
 }
-.container main.main_first article.article_menu ul li.article_menu-second a {
+.container main.main_first div.slider-wrapper ul li.article_menu-second a {
   color: rgb(255, 229, 180);
 }
 .container main.main_second {

@@ -3,6 +3,7 @@ body
     max-width: 100%
     width: 100%
     background: rgb(65, 105, 225)
+    overflow-x: hidden
 a
     text-decoration: none
     color: black
@@ -56,47 +57,65 @@ li
                         transition: 0.3s
                         fill: #ffc861
     main.main_first
+        margin-top: 120px
         display: flex
-        align-items: center
-        justify-content: space-between
+        overflow: hidden
+        width: max-content
         margin-bottom: 65px
-        article
-            margin-left: 123px  
-            h2.article_title
-                max-width: 606px
-                color: rgb(0, 0, 0)
-                font-family: Roboto
-                font-size: 72px
-                font-weight: 800
-                line-height: 84px
-                letter-spacing: 0%
-                text-align: left
-                text-transform: uppercase
-            p.article_subtitle1
-                margin-top: 11px
-                max-width: 606px
-                color: rgb(0, 0, 0)
-                font-family: "Abel", sans-serif
-                font-size: 24px
-                font-weight: 400
-                line-height: 31px
-                letter-spacing: 0%
-                text-align: left
-            p.article_subtitle2
-                margin-top: 22px
-                max-width: 606px
-                color: rgb(0, 0, 0)
-                font-family: "Abel", sans-serif
-                font-size: 24px
-                font-weight: 400
-                line-height: 31px
-                letter-spacing: 0%
-                text-align: left
-            button
-                margin-top: 28px
-                background: rgb(255, 229, 180)
-                padding: 26px
-        article.article_menu
+        @keyframes slide
+            0% 
+                transform: translateX(0)
+            50% 
+                transform: translateX(-100%)
+            100% 
+                transform: translateX(0)
+            
+        
+        .slider-wrapper
+            width: calc(100% - 170vw) 
+            display: flex
+            animation: slide 50s linear infinite alternate
+        div.slider-wrapper
+            div.slider-element
+                display: flex
+                align-items: center
+                article
+                    margin-left: 123px  
+                    h2.article_title
+                        max-width: 606px
+                        color: rgb(0, 0, 0)
+                        font-family: Roboto
+                        font-size: 72px
+                        font-weight: 800
+                        line-height: 84px
+                        letter-spacing: 0%
+                        text-align: left
+                        text-transform: uppercase
+                    p.article_subtitle1
+                        margin-top: 11px
+                        max-width: 606px
+                        color: rgb(0, 0, 0)
+                        font-family: "Abel", sans-serif
+                        font-size: 24px
+                        font-weight: 400
+                        line-height: 31px
+                        letter-spacing: 0%
+                        text-align: left
+                    p.article_subtitle2
+                        margin-top: 22px
+                        max-width: 606px
+                        color: rgb(0, 0, 0)
+                        font-family: "Abel", sans-serif
+                        font-size: 24px
+                        font-weight: 400
+                        line-height: 31px
+                        letter-spacing: 0%
+                        text-align: left
+                    button
+                        margin-top: 28px
+                        background: rgb(255, 229, 180)
+                        padding: 26px
+                article.article_menu
             margin-right: 47px
             ul
                 list-style-type: none
