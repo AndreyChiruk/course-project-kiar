@@ -1,0 +1,115 @@
+@media only screen and (max-width: 1670px) {
+  .main_text button {
+    background: rgb(255, 229, 180) !important;
+  }
+  .textbtn {
+    fill: black !important;
+  }
+}
+@media only screen and (max-width: 1460px) {
+  .main-container {
+    margin-left: 20px !important;
+    width: -webkit-max-content !important;
+    width: -moz-max-content !important;
+    width: max-content !important;
+    max-width: -webkit-max-content !important;
+    max-width: -moz-max-content !important;
+    max-width: max-content !important;
+  }
+}
+@media only screen and (max-width: 1360px) {
+  body {
+    background-color: rgb(65, 105, 225) !important;
+  }
+  .main-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+    margin-left: 40px !important;
+  }
+  .article_menu {
+    margin-right: 0 !important;
+    -ms-flex-item-align: end !important;
+        align-self: flex-end !important;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  header {
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+  }
+  div.logo {
+    margin-left: 57px;
+    padding-left: 0 !important;
+  }
+  div.burger {
+    cursor: pointer;
+    margin-left: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  nav {
+    margin-left: auto;
+  }
+  div.language {
+    margin-left: 0 !important;
+  }
+  ul.navigation {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  ul.navigation a {
+    display: none;
+  }
+}
+@media only screen and (max-width: 890px) {
+  .main_image svg {
+    width: 400px;
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  div.language svg {
+    width: 96px;
+    height: 96px;
+  }
+}
+@media only screen and (max-width: 670px) {
+  .main_text p {
+    max-width: 400px !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .main_text p {
+    max-width: 300px !important;
+  }
+  .main-container {
+    margin-left: 20px !important;
+  }
+  .main_image svg {
+    width: 250px;
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 390px) {
+  .main_text-title {
+    font-size: 32px !important;
+    font-weight: 800 !important;
+    line-height: 38px !important;
+  }
+  .main_text-top, .main_text-bottom {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    line-height: 20px !important;
+  }
+}

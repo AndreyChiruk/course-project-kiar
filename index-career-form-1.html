@@ -6,12 +6,17 @@
     <link rel="shortcut icon" href="img/f.png" type="image/png">
     <link rel="stylesheet" href="css/general_styles.css">
     <link rel="stylesheet" href="css/career_form_styles.css">
+    <link rel="stylesheet" href="css/career_form_styles_adaptive.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
     <title>Toy.Stream</title>
 </head>
 <body>
     <div class="container">
         <header>
+            <div class="burger">
+                <img class="burgerbtn" src="img/burger.png" alt="">
+              </div>
             <div class="logo" data-aos="fade-down" data-aos-delay="100">
                 <a href="index.html">
                   <svg width="135" height="75" viewBox="0 0 135 75" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -79,7 +84,7 @@
                   </svg></a>
               </div>
             <nav data-aos="fade-down" data-aos-delay="300">
-                <ul>
+                <ul class="navigation">
                     <a href="index.html"><li>Главная</li></a>
                     <a href="index-company.html"><li>Компания</li></a>
                     <a href="index-games.html"><li>Игры</li></a>
@@ -96,7 +101,17 @@
                           </svg>
                     </div>
                 </ul>
-            </nav>  
+            </nav>
+            <div class="burger_navigation">
+                <ul>
+                    <a href="index.html"><li>Главная</li></a>
+                    <a href="index-company.html"><li>Компания</li></a>
+                    <a href="index-games.html"><li>Игры</li></a>
+                    <a href="index-career.html"><li>Карьера</li></a>
+                    <a href="index-news.html"><li>Новости</li></a>
+                    <a href="index-map.html"><li>Контакты</li></a>
+                </ul>
+            </div>   
         </header>
         <main>
             <article class="article-text">
@@ -152,21 +167,21 @@
             <article class="article-form">
                 <div class="article-form-obolochka">
                     <h2 data-aos="fade-right" data-aos-delay="100">Напишите нам</h2>
-                    <form>
-                        <div>
-                            <input data-aos="fade-right" data-aos-delay="200" type="text" placeholder="ФИО">
-                            <input data-aos="fade-right" data-aos-delay="300" type="text" placeholder="sonic241990@gmail.com">
-                            <input data-aos="fade-right" data-aos-delay="400" type="text" placeholder="Телефон">
+                    <form id="myForm">
+                        <div class="first-line">
+                            <input data-aos="fade-right" data-aos-delay="200" name="name" type="text" placeholder="ФИО">
+                            <input data-aos="fade-right" data-aos-delay="300" name="email" type="email" placeholder="sonic241990@gmail.com">
+                            <input data-aos="fade-right" data-aos-delay="400" name="phone" type="text" placeholder="Телефон">
                         </div>
                         <div class="second-line">
-                            <input data-aos="fade-right" data-aos-delay="500" type="text" placeholder="Прикрепить резюме">
-                            <input data-aos="fade-right" data-aos-delay="600" type="text" placeholder="Прикрепить дополнительный файлы">
-                            <input data-aos="fade-right" data-aos-delay="700" type="text" placeholder="Дополнительный комментарии">
+                            <input data-aos="fade-right" data-aos-delay="500" name="resume" type="file" placeholder="Прикрепить резюме">
+                            <input data-aos="fade-right" data-aos-delay="600" name="additionalFiles" type="file" placeholder="Прикрепить дополнительные файлы">
+                            <input data-aos="fade-right" data-aos-delay="700" name="comments" type="text" placeholder="Дополнительные комментарии">
                         </div>
                         <div class="third-line">
                             <input data-aos="fade-right" data-aos-delay="800" type="submit" value="Отправить">
                             <div data-aos="fade-right" data-aos-delay="900" class="third-line-block">
-                                <input class="text-boxcheckbox" type="checkbox">
+                                <input class="text-boxcheckbox" name="agreement" type="checkbox">
                                 <p class="text-checkbox">Я соглашаюсь с Правилами пользования и Политикой конфиденциальности.</p>
                             </div>
                         </div>
@@ -179,7 +194,7 @@
                 <a href="index.html"><p>© Toy.Stream, Inc.</p></a>            
               </div>
             <nav>
-              <ul>
+              <ul class="navigation">
                 <a href="index.html"><li>Главная</li></a>
                 <a href="index-company.html"><li>Компания</li></a>
                 <a href="index-games.html"><li>Игры</li></a>
@@ -192,6 +207,7 @@
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="scripts/script.js"></script>
+    <script src="scripts/form.js"></script>
     <script>
       AOS.init();
     </script>

@@ -1,0 +1,166 @@
+@media only screen and (max-width: 1700px) {
+  body {
+    background-size: 70% 100% !important;
+  }
+}
+@media only screen and (max-width: 1322px) {
+  body {
+    background-size: 100% 100% !important;
+  }
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: -webkit-max-content !important;
+    width: -moz-max-content !important;
+    width: max-content !important;
+  }
+  .article_menu {
+    margin-right: 0 !important;
+    margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .article_icons {
+    margin-top: 24px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  header {
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+  }
+  div.logo {
+    margin-left: 57px;
+    padding-left: 0 !important;
+  }
+  div.burger {
+    cursor: pointer;
+    margin-left: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  nav {
+    margin-left: auto;
+  }
+  nav ul {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  nav ul a {
+    display: none;
+  }
+  div.language {
+    margin-left: 0 !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  div.language svg {
+    width: 96px;
+    height: 96px;
+  }
+}
+@media only screen and (max-width: 710px) {
+  .article_icons {
+    -ms-flex-item-align: start !important;
+        align-self: flex-start !important;
+    -webkit-column-gap: 50px !important;
+       -moz-column-gap: 50px !important;
+            column-gap: 50px !important;
+    row-gap: 50px !important;
+  }
+  .article_text h1 {
+    font-size: 48px !important;
+    font-weight: 800 !important;
+    line-height: 60px !important;
+  }
+  .article_text p {
+    max-width: 400px !important;
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    line-height: 20px !important;
+  }
+  .article_icons-title {
+    font-size: 36px !important;
+    font-weight: 800 !important;
+    line-height: 48px !important;
+  }
+  .article_icons-subtitle {
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    line-height: 20px !important;
+  }
+}
+@media only screen and (max-width: 510px) {
+  main {
+    margin: 0 20px !important;
+  }
+}
+@media only screen and (max-width: 450px) {
+  main {
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+  }
+  .article_text h1 {
+    font-size: 32px !important;
+    font-weight: 800 !important;
+    line-height: 38px !important;
+  }
+  .article_text p {
+    max-width: 320px !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    line-height: 20px !important;
+  }
+  .article_icons-title {
+    font-size: 26px !important;
+    font-weight: 800 !important;
+    line-height: 30px !important;
+  }
+  .article_icons-subtitle {
+    max-width: 100px !important;
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    line-height: 20px !important;
+  }
+  .article_icons {
+    row-gap: 40px !important;
+    -webkit-column-gap: 40px !important;
+       -moz-column-gap: 40px !important;
+            column-gap: 40px !important;
+  }
+  section svg {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  .article_icons {
+    -ms-grid-columns: (100px)[2] !important;
+    grid-template-columns: repeat(2, 100px) !important;
+    max-width: -webkit-max-content !important;
+    max-width: -moz-max-content !important;
+    max-width: max-content !important;
+    width: -webkit-max-content !important;
+    width: -moz-max-content !important;
+    width: max-content !important;
+  }
+  .article_icons section {
+    max-width: -webkit-max-content !important;
+    max-width: -moz-max-content !important;
+    max-width: max-content !important;
+    width: -webkit-max-content !important;
+    width: -moz-max-content !important;
+    width: max-content !important;
+  }
+}

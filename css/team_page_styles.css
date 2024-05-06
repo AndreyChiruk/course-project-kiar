@@ -130,19 +130,19 @@ li {
   display: -ms-flexbox;
   display: flex;
 }
-.container main div.main_container div.developers_container article {
+.container main div.main_container div.developers_container article.main_developers {
   margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.container main div.main_container div.developers_container article section {
+.container main div.main_container div.developers_container article.main_developers section {
   margin-right: 70px;
 }
-.container main div.main_container div.developers_container article section:last-child {
+.container main div.main_container div.developers_container article.main_developers section:last-child {
   margin-right: 0;
 }
-.container main div.main_container div.developers_container article section h2.section_fio {
+.container main div.main_container div.developers_container article.main_developers section h2.section_fio {
   margin-top: 16px;
   color: rgb(0, 0, 0);
   font-family: Roboto;
@@ -152,7 +152,7 @@ li {
   letter-spacing: 0%;
   text-align: left;
 }
-.container main div.main_container div.developers_container article section p.section_spec, .container main div.main_container div.developers_container article section p.section_text {
+.container main div.main_container div.developers_container article.main_developers section p.section_spec, .container main div.main_container div.developers_container article.main_developers section p.section_text {
   color: rgb(0, 0, 0);
   font-family: "Abel", sans-serif;
   font-size: 20px;
@@ -161,7 +161,7 @@ li {
   letter-spacing: 0%;
   text-align: left;
 }
-.container main div.main_container div.developers_container article section p.section_text {
+.container main div.main_container div.developers_container article.main_developers section p.section_text {
   margin-top: 22px;
   max-width: 342px;
 }

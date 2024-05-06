@@ -5,6 +5,10 @@ body {
   background: rgb(255, 229, 180);
 }
 
+.burger {
+  display: none;
+}
+
 a {
   text-decoration: none;
   color: black;

@@ -6,12 +6,16 @@
     <link rel="shortcut icon" href="img/f.png" type="image/png">
     <link rel="stylesheet" href="css/general_styles.css">
     <link rel="stylesheet" href="css/map_page_styles.css">
+    <link rel="stylesheet" href="css/map_page_styles_adaptive.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Toy.Stream</title>
 </head>
 <body>
     <div class="container">
         <header>
+          <div class="burger">
+            <img class="burgerbtn" src="img/burger.png" alt="">
+          </div>
             <div class="logo" data-aos="fade-down" data-aos-delay="100">
                 <a href="index.html">
                   <svg width="135" height="75" viewBox="0 0 135 75" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -96,14 +100,24 @@
                           </svg>
                     </div>
                 </ul>
-            </nav>  
+            </nav> 
+            <div class="burger_navigation">
+              <ul>
+                  <a href="index.html"><li>Главная</li></a>
+                  <a href="index-company.html"><li>Компания</li></a>
+                  <a href="index-games.html"><li>Игры</li></a>
+                  <a href="index-career.html"><li>Карьера</li></a>
+                  <a href="index-news.html"><li>Новости</li></a>
+                  <a href="index-map.html"><li>Контакты</li></a>
+              </ul>
+          </div> 
         </header>
         <main>
             <article class="article_text">
                 <h2 data-aos="fade-right" data-aos-delay="500">КОНТАКТЫ</h2>
-                <p data-aos="fade-right" data-aos-delay="600">+7 (926) 688 85 69</p>
-                <p data-aos="fade-right" data-aos-delay="700">support@toy.stream</p>
-                <p data-aos="fade-right" data-aos-delay="800">Technopark Skolkovo, Moscow, 121205</p>
+                <p class="info" data-aos="fade-right" data-aos-delay="600"></p>
+                <p class="info" data-aos="fade-right" data-aos-delay="700"></p>
+                <p class="info" data-aos="fade-right" data-aos-delay="800"></p>
             </article>
             <article class="article_map" data-aos="fade-down" data-aos-delay="900">
                 <div style="position:relative;overflow:hidden;"><a href="https://yandex.by/maps/org/tekhnopark_skolkovo/1669360469/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Технопарк Сколково</a><a href="https://yandex.by/maps/213/moscow/category/science_park/126204989789/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Технопарк в Москве</a><a href="https://yandex.by/maps/213/moscow/category/new_technologies/184106206/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Новые технологии в Москве</a><iframe src="https://yandex.by/map-widget/v1/?azimuth=0.04105490399577573&ll=37.352276%2C55.691058&mode=search&oid=1669360469&ol=biz&sctx=ZAAAAAgBEAAaKAoSCXmu78NBjjtAES%2F6CtKM80pAEhIJx%2FKuesA84j8RgGCOHr%2B3yT8iBgABAgMEBSgKOABAip8BSAFqAnVhnQHNzEw9oAEAqAEAvQGpj3IQwgEF1daBnAaCAiNUZWNobm9wYXJrIFNrb2xrb3ZvLCBNb3Njb3csIDEyMTIwNYoCAJICAzIxM5oCDGRlc2t0b3AtbWFwc6oCEzI3Mjg4OTU1OCw2NzU5NzY3NjmwAgE%3D&sll=37.352276%2C55.691058&sspn=0.047001%2C0.015849&text=Technopark%20Skolkovo%2C%20Moscow%2C%20121205&tilt=0.0028277161598467986&z=15.6" width="1070" height="625" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
@@ -127,6 +141,7 @@
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="scripts/script.js"></script>
+    <script src="scripts/script-map-info.js"></script>
     <script>
       AOS.init();
     </script>

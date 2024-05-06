@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<company>
+    <person>
+        <name>Алекс Шерман</name>
+        <position>CEO</position>
+        <quote>Безос говорил, если не можешь накормить команду двумя пиццами - у тебя слишком большая команда. Нам удается! И в этом наше преимущество. (-:)</quote>
+    </person>
+    <person>
+        <name>Александр Исаев</name>
+        <position>CBDO</position>
+        <quote>Мы ежедневно отслеживаем и анализируем топы Apple Store и Google Play Market - в нашем деле важно быть в курсе каждой детали ситуации на рынке.</quote>
+    </person>
+    <person>
+        <name>Александр Негреев</name>
+        <position>Game designer</position>
+        <quote>Мозговые штурмы порой затягиваются до поздней ночи, но как еще найти среди сотни идей - ту самую, блестящую?</quote>
+    </person>
+    <person>
+        <name>Эрик Имашев</name>
+        <position>Unity developer</position>
+        <quote>В каждом проекте важно не только то, что видно игроку - но и что находится под капотом. Мгновенный отклик и вовремя сохраненная игра - очень ценятся игроками.</quote>
+    </person>
+</company>

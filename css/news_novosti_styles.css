@@ -10,6 +10,10 @@ a {
   color: black;
 }
 
+.burger {
+  display: none;
+}
+
 li {
   cursor: pointer;
 }

@@ -11,6 +11,10 @@ a {
   color: black;
 }
 
+.burger {
+  display: none;
+}
+
 button {
   cursor: pointer;
 }

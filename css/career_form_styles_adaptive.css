@@ -1,0 +1,109 @@
+@media only screen and (max-width: 1400px) {
+  .first-line {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .second-line {
+    margin-top: 0 !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .third-line {
+    margin-top: 0 !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  input[type=text] {
+    margin-top: 20px;
+  }
+  .third-line-block {
+    margin-top: 20px;
+  }
+  .text-boxcheckbox {
+    margin-left: 0 !important;
+  }
+  input[type=submit] {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 1240px) {
+  .article-text {
+    margin: 0 48px !important;
+  }
+  .article-form {
+    padding: 0 48px !important;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  header {
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+  }
+  div.logo {
+    margin-left: 57px;
+    padding-left: 0 !important;
+  }
+  div.burger {
+    cursor: pointer;
+    margin-left: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  nav {
+    margin-left: auto;
+  }
+  div.language {
+    margin-left: 0 !important;
+  }
+  ul.navigation {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  ul.navigation a {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  div.language svg {
+    width: 96px;
+    height: 96px;
+  }
+}
+@media only screen and (max-width: 545px) {
+  h3 {
+    font-size: 32px !important;
+    font-weight: 800 !important;
+    line-height: 38px !important;
+    letter-spacing: 0% !important;
+  }
+  p, ul, li {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    line-height: 20px !important;
+    letter-spacing: 0% !important;
+  }
+  h2 {
+    font-size: 32px !important;
+    font-weight: 800 !important;
+    line-height: 38px !important;
+    letter-spacing: 0% !important;
+  }
+  input {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    line-height: 20px !important;
+  }
+}

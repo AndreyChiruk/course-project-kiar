@@ -5,6 +5,10 @@ body {
   background: rgb(255, 229, 180);
 }
 
+.burger {
+  display: none;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -131,10 +135,22 @@ li {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.container main article.article-cards a:not(:last-child) {
+.container main article.article-cards article.slides {
+  margin: 0 auto;
+  max-width: 1595px;
+  width: 100%;
+  margin-top: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.container main article.article-cards article.slides a:not(:last-child) {
   margin-right: 40px;
 }
-.container main article.article-cards section.section-card {
+.container main article.article-cards article.slides section.section-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -147,7 +163,7 @@ li {
   height: 100%;
   background: rgb(65, 105, 225);
 }
-.container main article.article-cards section.section-card p.time-news {
+.container main article.article-cards article.slides section.section-card p.time-news {
   padding: 24px 40px 0 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -163,10 +179,10 @@ li {
   letter-spacing: 0%;
   text-align: left;
 }
-.container main article.article-cards section.section-card p.time-news span.time-icon {
+.container main article.article-cards article.slides section.section-card p.time-news span.time-icon {
   margin-right: 20px;
 }
-.container main article.article-cards section.section-card h3.theme-news {
+.container main article.article-cards article.slides section.section-card h3.theme-news {
   margin-top: 13px;
   padding: 0 40px;
   color: rgb(0, 0, 0);
@@ -177,7 +193,7 @@ li {
   letter-spacing: 0%;
   text-align: left;
 }
-.container main article.article-cards section.section-card p.about-news {
+.container main article.article-cards article.slides section.section-card p.about-news {
   margin-bottom: 10px;
   max-width: 423px;
   margin-top: 15px;
@@ -190,10 +206,10 @@ li {
   letter-spacing: 0%;
   text-align: left;
 }
-.container main article.article-cards section.section-card div.image {
+.container main article.article-cards article.slides section.section-card div.image {
   margin-top: auto;
 }
-.container main article.article-cards section.section-card div.image img.bottom-news {
+.container main article.article-cards article.slides section.section-card div.image img.bottom-news {
   margin-top: auto;
   padding: 0 40px;
   margin-bottom: 46px;
