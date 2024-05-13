@@ -73,7 +73,7 @@
         -ms-flex-pack: center !important;
             justify-content: center !important;
   }
-  .slider-element article svg {
+  .slider-element article img {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
@@ -169,7 +169,7 @@
     font-weight: 800 !important;
     line-height: 38px !important;
   }
-  .article_projects section svg {
+  .article_projects section img {
     width: 100% !important;
     height: -webkit-max-content !important;
     height: -moz-max-content !important;
@@ -197,7 +197,7 @@
     line-height: 20px !important;
     letter-spacing: 0% !important;
   }
-  .slider-element article svg {
+  .slider-element article img.slider-img {
     width: 335px !important;
   }
   article.article_menu1 {
@@ -206,7 +206,7 @@
     margin-right: 10px !important;
     margin-bottom: 20px;
   }
-  .slider-element article svg {
+  .slider-element article img {
     height: -webkit-max-content !important;
     height: -moz-max-content !important;
     height: max-content !important;

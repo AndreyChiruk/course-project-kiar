@@ -4,6 +4,30 @@
         -ms-flex-pack: space-evenly !important;
             justify-content: space-evenly !important;
   }
+  .main-title {
+    padding: 0 40px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .slider1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .slider1 img {
+    width: 67px !important;
+    height: 67px !important;
+  }
+  .slider1 .slider-next {
+    margin-left: 85px !important;
+  }
 }
 @media only screen and (max-width: 1410px) {
   .main-icons {

@@ -4,6 +4,8 @@ body {
   width: 100%;
   background: rgb(65, 105, 225);
   overflow-x: hidden;
+  -ms-touch-action: pan-y;
+      touch-action: pan-y;
 }
 
 a {
@@ -25,6 +27,10 @@ li {
 
 .container-btn-slider {
   display: none;
+}
+
+.main_first {
+  overflow-x: hidden !important;
 }
 
 article.article_menu1 {
@@ -157,6 +163,8 @@ article.article_menu1 ul li.article_menu-second a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-touch-action: pan-y;
+      touch-action: pan-y;
   overflow: hidden;
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -209,6 +217,10 @@ article.article_menu1 ul li.article_menu-second a {
 }
 .container main.main_first div.slider-wrapper div.slider-element article {
   margin-left: 123px;
+}
+.container main.main_first div.slider-wrapper div.slider-element article img {
+  width: 695px;
+  height: 695px;
 }
 .container main.main_first div.slider-wrapper div.slider-element article h2.article_title {
   max-width: 606px;

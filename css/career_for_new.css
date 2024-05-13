@@ -22,6 +22,10 @@ li {
   display: none;
 }
 
+.slider1 {
+  display: none;
+}
+
 .slider2 {
   display: none !important;
 }
