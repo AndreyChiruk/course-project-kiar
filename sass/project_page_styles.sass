@@ -11,6 +11,38 @@ button
     cursor: pointer
 li
     cursor: pointer
+.burger
+    display: none
+.container-btn-slider
+    display: none
+article.article_menu1
+    display: none
+    width: max-content
+    margin-right: 47px
+    ul
+        list-style-type: none
+        li
+            color: rgb(255, 229, 180)
+            font-family: "Abel", sans-serif
+            font-size: 20px
+            font-weight: 400
+            line-height: 25px
+            letter-spacing: 0%
+            text-align: right
+            text-transform: uppercase
+            p
+                margin-right: 10px
+        li.article_menu-first
+            margin-top: 10px
+            display: flex
+            justify-content: flex-end
+            align-items: center
+        li.article_menu-second     
+            display: flex
+            justify-content: space-between
+            align-items: center
+            a
+                color: rgb(255, 229, 180)
 .container
     width: 100%
     header
@@ -59,6 +91,7 @@ li
     main.main_first
         margin-top: 120px
         display: flex
+        flex-direction: column
         overflow: hidden
         width: max-content
         margin-bottom: 65px
@@ -114,8 +147,11 @@ li
                     button
                         margin-top: 28px
                         background: rgb(255, 229, 180)
-                        padding: 26px
-                article.article_menu
+                        img 
+                            width: 192px
+                            height: 94px    
+        article.article_menu
+            width: max-content
             margin-right: 47px
             ul
                 list-style-type: none
@@ -194,8 +230,6 @@ li
                     button
                         align-self: flex-start
                         margin-top: auto
-                        padding: 20px 35px
-                        background: rgb(65, 105, 225)
 
         
     footer
