@@ -6,12 +6,16 @@
     <link rel="shortcut icon" href="img/f.png" type="image/png">
     <link rel="stylesheet" href="css/general_styles.css">
     <link rel="stylesheet" href="css/career_for_new.css">
+    <link rel="stylesheet" href="css/career_for_new_adaptive.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Toy.Stream</title>
 </head>
 <body>
     <div class="container">
         <header>
+            <div class="burger">
+                <img class="burgerbtn" src="img/burger.png" alt="">
+              </div>
             <div class="logo" data-aos="fade-down" data-aos-delay="100">
                 <a href="index.html">
                   <svg width="135" height="75" viewBox="0 0 135 75" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -79,7 +83,7 @@
                   </svg></a>
               </div>
             <nav data-aos="fade-down" data-aos-delay="300">
-                <ul>
+                <ul class="navigation">
                     <a href="index.html"><li>Главная</li></a>
                     <a href="index-company.html"><li>Компания</li></a>
                     <a href="index-games.html"><li>Игры</li></a>
@@ -96,11 +100,25 @@
                           </svg>
                     </div>
                 </ul>
-            </nav>  
+            </nav> 
+            <div class="burger_navigation">
+                <ul>
+                    <a href="index.html"><li>Главная</li></a>
+                    <a href="index-company.html"><li>Компания</li></a>
+                    <a href="index-games.html"><li>Игры</li></a>
+                    <a href="index-career.html"><li>Карьера</li></a>
+                    <a href="index-news.html"><li>Новости</li></a>
+                    <a href="index-map.html"><li>Контакты</li></a>
+                </ul>
+            </div> 
         </header>
         <main>
             <article class="main-title">
                 <h2 data-aos="fade-right" data-aos-delay="500">Наши вакансии</h2>
+                <div class="container-btn-slider slider1">
+                    <img class="slider-prev" src="img/slider-prev.png" alt="">
+                    <img class="slider-next" src="img/slider-next.png" alt="">
+                </div>
             </article>
             <article class="main-jobs">
                 <section data-aos="fade-down" data-aos-delay="700">
@@ -152,6 +170,10 @@
                     </div>
                 </section>
             </article>
+            <div class="container-btn-slider slider2">
+                <img class="slider-prev" src="img/slider-prev.png" alt="">
+                <img class="slider-next" src="img/slider-next.png" alt="">
+            </div>
             <article class="main-icons">
                 <section class="section-text">
                     <h2 data-aos="fade-right" data-aos-delay="100">Преимущества работы в Toy.Stream</h2>
@@ -1272,7 +1294,7 @@
                 <a href="index.html"><p>© Toy.Stream, Inc.</p></a>            
               </div>
             <nav>
-              <ul>
+              <ul class="navigation">
                 <a href="index.html"><li>Главная</li></a>
                 <a href="index-company.html"><li>Компания</li></a>
                 <a href="index-games.html"><li>Игры</li></a>
@@ -1285,6 +1307,7 @@
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="scripts/script.js"></script>
+    <script src="scripts/script-career-slider.js"></script>
     <script>
       AOS.init();
     </script>
