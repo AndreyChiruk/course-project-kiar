@@ -18,6 +18,14 @@ li {
   cursor: pointer;
 }
 
+.slider1 {
+  display: none;
+}
+
+.slider2 {
+  display: none;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
