@@ -6,7 +6,7 @@
     <link rel="shortcut icon" href="img/f.png" type="image/png">
     <link rel="stylesheet" href="css/general_styles.css">
     <link rel="stylesheet" href="css/news_page_styles.css">
-    <link rel="stylesheet" href="css/home_page_styles_adaptive.css">
+    <link rel="stylesheet" href="css/news_page_styles_adaptive.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Toy.Stream</title>
 </head>
@@ -14,7 +14,7 @@
     <div class="container">
         <header>
             <div class="burger">
-                <img src="img/burger.png">
+                <img class="burgerbtn" src="img/burger.png" alt="">
               </div>
             <div class="logo" data-aos="fade-down" data-aos-delay="100">
                 <a href="index.html">
@@ -83,7 +83,7 @@
                   </svg></a>
               </div>
             <nav data-aos="fade-down" data-aos-delay="300">
-                <ul>
+                <ul class="navigation">
                     <a href="index.html"><li>Главная</li></a>
                     <a href="index-company.html"><li>Компания</li></a>
                     <a href="index-games.html"><li>Игры</li></a>
@@ -100,11 +100,25 @@
                           </svg>
                     </div>
                 </ul>
-            </nav>  
+            </nav> 
+            <div class="burger_navigation">
+                <ul>
+                    <a href="index.html"><li>Главная</li></a>
+                    <a href="index-company.html"><li>Компания</li></a>
+                    <a href="index-games.html"><li>Игры</li></a>
+                    <a href="index-career.html"><li>Карьера</li></a>
+                    <a href="index-news.html"><li>Новости</li></a>
+                    <a href="index-map.html"><li>Контакты</li></a>
+                </ul>
+            </div> 
         </header>
         <main>
             <article class="article-text">
                 <h2 data-aos="fade-right" data-aos-delay="500">Новости</h2>
+                <div class="container-btn-slider slider1">
+                    <img class="slider-prev" src="img/slider-prev.png" alt="">
+                    <img class="slider-next" src="img/slider-next.png" alt="">
+                </div>
             </article>
             <article class="article-cards">
                 <article class="slides">
@@ -204,13 +218,17 @@
                     </section></a>
                 </article>
             </article>
+            <div class="container-btn-slider slider2">
+                <img class="slider-prev" src="img/slider-prev.png" alt="">
+                <img class="slider-next" src="img/slider-next.png" alt="">
+            </div>
         </main>
         <footer>
             <div class="footer_logo">
                 <a href="index.html"><p>© Toy.Stream, Inc.</p></a>            
               </div>
             <nav>
-              <ul>
+              <ul class="navigation">
                 <a href="index.html"><li>Главная</li></a>
                 <a href="index-company.html"><li>Компания</li></a>
                 <a href="index-games.html"><li>Игры</li></a>
@@ -223,6 +241,7 @@
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="scripts/script.js"></script>
+    <script src="scripts/script-news-slider.js"></script>
     <script>
       AOS.init();
     </script>
