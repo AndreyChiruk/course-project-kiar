@@ -19,6 +19,64 @@ li {
   cursor: pointer;
 }
 
+.burger {
+  display: none;
+}
+
+.container-btn-slider {
+  display: none;
+}
+
+article.article_menu1 {
+  display: none;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-right: 47px;
+}
+article.article_menu1 ul {
+  list-style-type: none;
+}
+article.article_menu1 ul li {
+  color: rgb(255, 229, 180);
+  font-family: "Abel", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0%;
+  text-align: right;
+  text-transform: uppercase;
+}
+article.article_menu1 ul li p {
+  margin-right: 10px;
+}
+article.article_menu1 ul li.article_menu-first {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+article.article_menu1 ul li.article_menu-second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+article.article_menu1 ul li.article_menu-second a {
+  color: rgb(255, 229, 180);
+}
+
 .container {
   width: 100%;
 }
@@ -95,6 +153,10 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   overflow: hidden;
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -136,9 +198,6 @@ li {
   display: flex;
   -webkit-animation: slide 50s linear infinite alternate;
           animation: slide 50s linear infinite alternate;
-}
-.container main.main_first div.slider-wrapper {
-  margin-right: 47px;
 }
 .container main.main_first div.slider-wrapper div.slider-element {
   display: -webkit-box;
@@ -187,12 +246,21 @@ li {
 .container main.main_first div.slider-wrapper div.slider-element article button {
   margin-top: 28px;
   background: rgb(255, 229, 180);
-  padding: 26px;
 }
-.container main.main_first div.slider-wrapper ul {
+.container main.main_first div.slider-wrapper div.slider-element article button img {
+  width: 192px;
+  height: 94px;
+}
+.container main.main_first article.article_menu {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-right: 47px;
+}
+.container main.main_first article.article_menu ul {
   list-style-type: none;
 }
-.container main.main_first div.slider-wrapper ul li {
+.container main.main_first article.article_menu ul li {
   color: rgb(255, 229, 180);
   font-family: "Abel", sans-serif;
   font-size: 20px;
@@ -202,10 +270,10 @@ li {
   text-align: right;
   text-transform: uppercase;
 }
-.container main.main_first div.slider-wrapper ul li p {
+.container main.main_first article.article_menu ul li p {
   margin-right: 10px;
 }
-.container main.main_first div.slider-wrapper ul li.article_menu-first {
+.container main.main_first article.article_menu ul li.article_menu-first {
   margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -217,7 +285,7 @@ li {
       -ms-flex-align: center;
           align-items: center;
 }
-.container main.main_first div.slider-wrapper ul li.article_menu-second {
+.container main.main_first article.article_menu ul li.article_menu-second {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -228,7 +296,7 @@ li {
       -ms-flex-align: center;
           align-items: center;
 }
-.container main.main_first div.slider-wrapper ul li.article_menu-second a {
+.container main.main_first article.article_menu ul li.article_menu-second a {
   color: rgb(255, 229, 180);
 }
 .container main.main_second {
@@ -301,8 +369,6 @@ li {
   -ms-flex-item-align: start;
       align-self: flex-start;
   margin-top: auto;
-  padding: 20px 35px;
-  background: rgb(65, 105, 225);
 }
 .container footer {
   padding: 18px 0;
