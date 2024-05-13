@@ -4,6 +4,7 @@ body
     width: 100%
     background: rgb(65, 105, 225)
     overflow-x: hidden
+    touch-action: pan-y
 a
     text-decoration: none
     color: black
@@ -15,6 +16,8 @@ li
     display: none
 .container-btn-slider
     display: none
+.main_first
+    overflow-x: hidden !important
 article.article_menu1
     display: none
     width: max-content
@@ -92,6 +95,7 @@ article.article_menu1
         margin-top: 120px
         display: flex
         flex-direction: column
+        touch-action: pan-y
         overflow: hidden
         width: max-content
         margin-bottom: 65px
@@ -113,7 +117,10 @@ article.article_menu1
                 display: flex
                 align-items: center
                 article
-                    margin-left: 123px  
+                    margin-left: 123px 
+                    img
+                        width: 695px
+                        height: 695px
                     h2.article_title
                         max-width: 606px
                         color: rgb(0, 0, 0)
