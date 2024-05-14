@@ -1,113 +1,108 @@
-let projects = document.querySelectorAll('.main-jobs')[0];
+let arrayProjects = document.querySelectorAll('.main-jobs')[0];
 let counter = 0;
+let windowWidth = window.innerWidth;
 
-// Функция для обновления отображения
+function updateWindowWidth() {
+    windowWidth = window.innerWidth;
+}
+
 function updateDisplay() {
-    // Скрываем все элементы
-    for (let i = 0; i < projects.children.length; i++) {
-        projects.children[i].style.display = "none";
+    // Hide all elements initially
+    for (let i = 0; i < arrayProjects.children.length; i++) {
+        arrayProjects.children[i].style.display = "none";
     }
 
-    // Определяем индексы элементов для отображения
-    let firstIndex, secondIndex;
-
-    // Если ширина окна менее 960px, отображаем только один элемент
-    if (window.innerWidth < 940) {
-        // Определяем индекс элемента для отображения при разрешении менее 960px
-        firstIndex = counter % projects.children.length;
-        projects.children[firstIndex].style.display = "flex";
+    // Show the appropriate number of elements based on the window width
+    if (windowWidth < 1560) {
+        if (windowWidth < 940) {
+            arrayProjects.children[counter].style.display = "flex";
+        } else {
+            arrayProjects.children[counter].style.display = "flex";
+            arrayProjects.children[(counter + 1) % arrayProjects.children.length].style.display = "flex";
+        }
     } else {
-        // Иначе, если ширина окна от 960px до 1360px, отображаем два элемента
-        firstIndex = counter % projects.children.length;
-        secondIndex = (counter + 1) % projects.children.length;
-
-        projects.children[firstIndex].style.display = "flex";
-        projects.children[secondIndex].style.display = "flex";
-    }
-}
-
-// Функция для проверки ширины окна
-function checkWindowWidth() {
-    // Если ширина окна менее 1360px, то выполняем скрипт
-    if (window.innerWidth < 1560) {
-        // Если ширина окна менее 960px, отображаем только один элемент
-        if (window.innerWidth < 940) {
-            // Устанавливаем счетчик на четное значение
-            counter = Math.floor(counter / 2) * 2;
-            // Обновляем отображение
-            updateDisplay();
-        } else {
-            // Иначе переключаемся между двумя элементами как раньше
-            updateDisplay();
+        // Show all elements
+        for (let i = 0; i < arrayProjects.children.length; i++) {
+            arrayProjects.children[i].style.display = "flex";
         }
     }
 }
 
-// Проверяем ширину окна при загрузке страницы
-checkWindowWidth();
+// Update window width initially
+updateWindowWidth();
 
-// Обработчик нажатия на кнопку "next"
+// Add event listener for window resize
+window.addEventListener('resize', () => {
+    updateWindowWidth();
+    updateDisplay();
+});
+
+// Add event listeners for slider functionality
 document.querySelectorAll(".slider-next")[0].addEventListener('click', () => {
-    // Если ширина окна менее 1360px, переключаем элементы
-    if (window.innerWidth < 1560) {
-        // Если ширина окна менее 960px, переключаем элементы на один вперед
-        if (window.innerWidth < 940) {
+    if (windowWidth < 1560) {
+        if (windowWidth < 940) {
+            // Move to the next element
             counter += 1;
+            counter %= arrayProjects.children.length; // To cycle through elements
         } else {
-            // Иначе переключаемся между двумя элементами как раньше
-            counter += 2;
+            // Move to the next two elements
+            counter += 1;
+            counter %= arrayProjects.children.length; // To cycle through elements
         }
-        // Обновляем отображение
         updateDisplay();
     }
 });
 document.querySelectorAll(".slider-next")[1].addEventListener('click', () => {
-    // Если ширина окна менее 1360px, переключаем элементы
-    if (window.innerWidth < 1560) {
-        // Если ширина окна менее 960px, переключаем элементы на один вперед
-        if (window.innerWidth < 940) {
+    if (windowWidth < 1560) {
+        if (windowWidth < 940) {
+            // Move to the next element
             counter += 1;
+            counter %= arrayProjects.children.length; // To cycle through elements
         } else {
-            // Иначе переключаемся между двумя элементами как раньше
-            counter += 2;
+            // Move to the next two elements
+            counter += 1;
+            counter %= arrayProjects.children.length; // To cycle through elements
         }
-        // Обновляем отображение
         updateDisplay();
     }
 });
 
-// Обработчик нажатия на кнопку "prev"
 document.querySelectorAll(".slider-prev")[0].addEventListener('click', () => {
-    // Если ширина окна менее 1360px, переключаем элементы
-    if (window.innerWidth < 1560) {
-        // Если ширина окна менее 960px, переключаем элементы на один назад
-        if (window.innerWidth < 940) {
+    if (windowWidth < 1560) {
+        if (windowWidth < 940) {
+            // Move to the previous element
             counter -= 1;
+            if (counter < 0) {
+                counter = arrayProjects.children.length - 1; // To show the last element when at the beginning
+            }
         } else {
-            // Иначе переключаемся между двумя элементами как раньше
-            counter -= 2;
+            // Move to the previous element
+            counter -= 1;
+            if (counter < 0) {
+                counter = arrayProjects.children.length - 1; // To show the last element when at the beginning
+            }
         }
-        // Обновляем отображение
         updateDisplay();
     }
 });
 document.querySelectorAll(".slider-prev")[1].addEventListener('click', () => {
-    // Если ширина окна менее 1360px, переключаем элементы
-    if (window.innerWidth < 1560) {
-        // Если ширина окна менее 960px, переключаем элементы на один назад
-        if (window.innerWidth < 940) {
+    if (windowWidth < 1560) {
+        if (windowWidth < 940) {
+            // Move to the previous element
             counter -= 1;
+            if (counter < 0) {
+                counter = arrayProjects.children.length - 1; // To show the last element when at the beginning
+            }
         } else {
-            // Иначе переключаемся между двумя элементами как раньше
-            counter -= 2;
+            // Move to the previous element
+            counter -= 1;
+            if (counter < 0) {
+                counter = arrayProjects.children.length - 1; // To show the last element when at the beginning
+            }
         }
-        // Обновляем отображение
         updateDisplay();
     }
 });
 
-// Обработчик изменения размера окна
-window.addEventListener('resize', () => {
-    // Проверяем ширину окна при изменении размера
-    checkWindowWidth();
-});
+// Call updateDisplay() immediately after setting event listeners
+updateDisplay();
