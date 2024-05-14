@@ -54,12 +54,12 @@
   div.language {
     margin-left: 0 !important;
   }
-  ul {
+  ul.navigation {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
   }
-  ul a {
+  ul.navigation a {
     display: none;
   }
 }

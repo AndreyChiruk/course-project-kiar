@@ -138,6 +138,9 @@ button {
   letter-spacing: 0%;
   text-align: left;
 }
+.container main article.main_text .main-btn {
+  display: inline-block;
+}
 .container main article.main_text button {
   margin-top: 33px;
   padding: 20px;

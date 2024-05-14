@@ -23,6 +23,10 @@ li {
   cursor: pointer;
 }
 
+.main-btn {
+  display: inline-block;
+}
+
 .container {
   width: 100%;
 }
